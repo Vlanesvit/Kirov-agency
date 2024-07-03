@@ -63,8 +63,8 @@ function startHoverVideo() {
 		videoContainers.forEach(container => {
 			const video = container.querySelector('video');
 			video.pause();
-			video.currentTime = 0;
-			video.load(); // Перезагрузить видео, чтобы отобразить постер
+			// video.currentTime = 0;
+			// video.load(); // Перезагрузить видео, чтобы отобразить постер
 		});
 	}
 
@@ -93,8 +93,8 @@ function startHoverVideo() {
 
 		container.addEventListener('mouseleave', function () {
 			video.pause();
-			video.currentTime = 0; // Возвращаем видео в начало
-			video.load(); // Перезагрузить видео, чтобы отобразить постер
+			// video.currentTime = 0; // Возвращаем видео в начало
+			// video.load(); // Перезагрузить видео, чтобы отобразить постер
 		});
 	});
 }

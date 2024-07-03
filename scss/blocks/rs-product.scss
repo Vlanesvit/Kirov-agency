@@ -63,6 +63,10 @@
 			.rs-product__desc {
 				color: var(--font-color);
 			}
+
+			.rs-product__date {
+				color: var(--font-color);
+			}
 		}
 
 		&._second-bg {
@@ -128,7 +132,8 @@
 
 	// .rs-product__date
 	&__date {
-		font-weight: 600;
+		// font-weight: 600;
+		font-weight: 700;
 		font-size: 14px;
 		text-align: center;
 		color: #fff;

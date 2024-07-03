@@ -95,7 +95,7 @@
 }
 @media (min-width: 991.98px) {
   .rs-header__menu .menu__list > li > a {
-    font-weight: 600 !important;
+    font-weight: 700 !important;
     height: 100%;
   }
   ._header-transparent:not(._header-scroll) .rs-header__menu .menu__list > li > a {
@@ -218,7 +218,7 @@
   margin-top: 20px;
 }
 .rs-header__contact_list li {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 15px;
   line-height: 130%;
 }

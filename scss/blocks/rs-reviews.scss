@@ -71,6 +71,14 @@
 
 	// .rs-reviews__slide
 	&__slide {
+		transition: width 0.3s ease 0s;
+		height: 570px;
+
+		@media (any-hover: hover) {
+			&:hover {
+				width: 50% !important;
+			}
+		}
 	}
 
 	// .rs-reviews__item
@@ -84,9 +92,9 @@
 	// .rs-reviews__video
 	&__video {
 		width: 100%;
+		height: 100%;
 		position: relative;
-		padding-bottom: 135.8%;
-		max-height: 570px;
+		// padding-bottom: 135.8%;
 
 		img,
 		video,
