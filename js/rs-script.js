@@ -53,6 +53,53 @@ document.querySelectorAll('.rs-btn').forEach(btn => {
 		</span>`
 });
 
+// Запускаем видео при наведении
+function startHoverVideo() {
+	const videoContainers = document.querySelectorAll('.rs-reviews__video');
+	let userInteracted = false;
+
+	// Функция для остановки всех видео и отображения постеров
+	function pauseAllVideos() {
+		videoContainers.forEach(container => {
+			const video = container.querySelector('video');
+			video.pause();
+			video.currentTime = 0;
+			video.load(); // Перезагрузить видео, чтобы отобразить постер
+		});
+	}
+
+	// Обработчик для взаимодействия пользователя
+	function handleUserInteraction() {
+		userInteracted = true;
+		document.removeEventListener('click', handleUserInteraction);
+		document.removeEventListener('touchstart', handleUserInteraction);
+	}
+
+	// Слушаем клик и тач на документе для регистрации взаимодействия пользователя
+	document.addEventListener('click', handleUserInteraction);
+	document.addEventListener('touchstart', handleUserInteraction);
+
+	videoContainers.forEach(container => {
+		const video = container.querySelector('video');
+
+		container.addEventListener('mouseenter', function () {
+			if (userInteracted) {
+				pauseAllVideos();
+				video.play().catch(error => {
+					console.error('Error trying to play the video:', error);
+				});
+			}
+		});
+
+		container.addEventListener('mouseleave', function () {
+			video.pause();
+			video.currentTime = 0; // Возвращаем видео в начало
+			video.load(); // Перезагрузить видео, чтобы отобразить постер
+		});
+	});
+}
+startHoverVideo()
+
 /* ====================================
 Добавить картинкам draggable="false"
 ==================================== */

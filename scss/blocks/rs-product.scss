@@ -27,11 +27,8 @@
 		height: auto;
 		border-radius: 30px;
 		overflow: hidden;
-		background-color: var(--primary-color);
 
-		&--dark-primary {
-			background-color: var(--primary-dark-color);
-
+		&._dark-primary-bg {
 			.rs-btn {
 				background-color: var(--second-color);
 				color: #fff;
@@ -42,9 +39,7 @@
 			}
 		}
 
-		&--primary {
-			background-color: var(--primary-color);
-
+		&._primary-bg {
 			.rs-btn {
 				background-color: var(--primary-dark-color);
 				color: #fff;
@@ -55,9 +50,7 @@
 			}
 		}
 
-		&--white {
-			background-color: #f1f7fc;
-
+		&._white-bg {
 			.rs-btn {
 				background-color: var(--second-color);
 				color: #fff;
@@ -72,9 +65,7 @@
 			}
 		}
 
-		&--second {
-			background-color: var(--second-color);
-
+		&._second-bg {
 			.rs-btn {
 				background-color: var(--primary-color);
 				color: #fff;

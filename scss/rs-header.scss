@@ -156,18 +156,22 @@
 					@media (any-hover: hover) {
 						&:hover {
 							& > .menu__dropdown_list {
+								pointer-events: all;
+								transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+									rotateZ(0deg) skew(0deg, 0deg);
+								transform-style: preserve-3d;
 								opacity: 1;
-								visibility: visible;
-								transform: translateY(0px);
 							}
 						}
 					}
 
 					&._open-menu {
 						& > .menu__dropdown_list {
+							pointer-events: all;
+							transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+								rotateZ(0deg) skew(0deg, 0deg);
+							transform-style: preserve-3d;
 							opacity: 1;
-							visibility: visible;
-							transform: translateY(0px);
 						}
 					}
 				}
@@ -179,16 +183,18 @@
 						z-index: 99;
 						transition: all 0.3s ease 0s;
 						display: block;
-						transform: translateY(10px);
 						top: 100%;
 						left: -25px;
 						width: 333px;
-						opacity: 0;
-						visibility: hidden;
 						box-shadow: 9px 11px 29px 0 rgba(125, 138, 152, 0.15);
 						background-color: #fff;
 						border-radius: 20px;
 						padding: 20px 0px;
+						transform: translate3d(0px, 3em, 0px) scale3d(0.8, 0.8, 1) rotateX(0deg) rotateY(0deg)
+							rotateZ(0deg) skew(0deg, 0deg);
+						transform-style: preserve-3d;
+						opacity: 0;
+						pointer-events: none;
 
 						li {
 							& > .menu__dropdown_list {
@@ -230,10 +236,11 @@
 		@media (any-hover: hover) {
 			&:hover {
 				.rs-header__contact_modal {
-					opacity: 1;
-					visibility: visible;
-					transform: translateY(0px);
 					pointer-events: all;
+					transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+						skew(0deg, 0deg);
+					transform-style: preserve-3d;
+					opacity: 1;
 				}
 			}
 		}
@@ -340,9 +347,10 @@
 			box-shadow: 9px 11px 29px 0 rgba(125, 138, 152, 0.15);
 			background: #fff;
 			transition: all 0.3s ease 0s;
+			transform: translate3d(0px, 3em, 0px) scale3d(0.8, 0.8, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+				skew(0deg, 0deg);
+			transform-style: preserve-3d;
 			opacity: 0;
-			visibility: hidden;
-			transform: translateY(15px);
 			pointer-events: none;
 
 			.rs-btn {

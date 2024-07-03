@@ -130,20 +130,22 @@
 }
 @media (min-width: 991.98px) and (any-hover: hover) {
   .rs-header__menu .menu__dropdown:hover > .menu__dropdown_list {
+    pointer-events: all;
+    -webkit-transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     opacity: 1;
-    visibility: visible;
-    -webkit-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-            transform: translateY(0px);
   }
 }
 @media (min-width: 991.98px) {
   .rs-header__menu .menu__dropdown._open-menu > .menu__dropdown_list {
+    pointer-events: all;
+    -webkit-transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     opacity: 1;
-    visibility: visible;
-    -webkit-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-            transform: translateY(0px);
   }
 }
 @media (min-width: 991.98px) {
@@ -153,19 +155,20 @@
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     display: block;
-    -webkit-transform: translateY(10px);
-        -ms-transform: translateY(10px);
-            transform: translateY(10px);
     top: 100%;
     left: -25px;
     width: 333px;
-    opacity: 0;
-    visibility: hidden;
     -webkit-box-shadow: 9px 11px 29px 0 rgba(125, 138, 152, 0.15);
             box-shadow: 9px 11px 29px 0 rgba(125, 138, 152, 0.15);
     background-color: #fff;
     border-radius: 20px;
     padding: 20px 0px;
+    -webkit-transform: translate3d(0px, 3em, 0px) scale3d(0.8, 0.8, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform: translate3d(0px, 3em, 0px) scale3d(0.8, 0.8, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    opacity: 0;
+    pointer-events: none;
   }
   .rs-header__menu .menu__dropdown_list li > .menu__dropdown_list {
     border-radius: 15px;
@@ -200,12 +203,12 @@
 }
 @media (any-hover: hover) {
   .rs-header__contact:hover .rs-header__contact_modal {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-            transform: translateY(0px);
     pointer-events: all;
+    -webkit-transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    opacity: 1;
   }
 }
 .rs-header__contact_body .rs-btn {
@@ -298,11 +301,11 @@
   background: #fff;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  -webkit-transform: translate3d(0px, 3em, 0px) scale3d(0.8, 0.8, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform: translate3d(0px, 3em, 0px) scale3d(0.8, 0.8, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translateY(15px);
-      -ms-transform: translateY(15px);
-          transform: translateY(15px);
   pointer-events: none;
 }
 .rs-header__contact_modal .rs-btn {

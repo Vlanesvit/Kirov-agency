@@ -35,7 +35,7 @@ function initSliders() {
 					observeSlideChildren: true,
 
 					// Скорость смены слайдов
-					speed: 800,
+					speed: 500,
 
 					// Включение/отключение
 					// перетаскивание на ПК
@@ -45,8 +45,7 @@ function initSliders() {
 					touchRadio: 1,
 					// Угол срабатывания свайпа/перетаскивания
 					touchAngle: 45,
-					// Cобытие touchstart (pointerdown)
-					touchStartPreventDefault: false,
+					touchStartPreventDefault: true,
 
 					// Цикличность слайдера
 					loop: true,
@@ -76,6 +75,80 @@ function initSliders() {
 					breakpoints: {
 						1439.98: {
 							slidesPerView: 1.5,
+							spaceBetween: 30,
+						},
+					},
+				});
+			});
+		});
+	}
+
+	if (document.querySelector('.rs-reviews__slider')) {
+		const sliderBlocks = document.querySelectorAll('.rs-reviews');
+
+		sliderBlocks.forEach(slider => {
+			const sliderSwiper = slider.querySelectorAll('.rs-reviews__slider');
+			const arrowPrev = slider.querySelector('.rs-reviews__button-prev');
+			const arrowNext = slider.querySelector('.rs-reviews__button-next');
+			const pagination = slider.querySelector('.rs-reviews__pagination');
+
+			sliderSwiper.forEach(swiper => {
+				const swiperMain = new Swiper(swiper, {
+					// // Автопрокрутка
+					// autoplay: {
+					// 	// Пауза между прокруткой
+					// 	delay: 10000,
+					// 	// Закончить на последнем слайде
+					// 	stopOnLastSlide: false,
+					// 	// Отключить после ручного переключения
+					// 	disableOnInteraction: false,
+					// },
+
+					// Обновить свайпер
+					// при изменении элементов слайдера
+					observer: true,
+					// при изменении родительских элементов слайдера
+					observeParents: true,
+					// при изменении дочерних элементов слайдера
+					observeSlideChildren: true,
+
+					// Скорость смены слайдов
+					speed: 500,
+
+					// Включение/отключение
+					// перетаскивание на ПК
+					simulateTouch: true,
+					allowTouchMove: true,
+					// Чувствительность свайпа
+					touchRadio: 1,
+					// Угол срабатывания свайпа/перетаскивания
+					touchAngle: 45,
+					touchStartPreventDefault: true,
+
+					// Цикличность слайдера
+					// loop: true,
+
+					// Анимация переключения
+					// effect: 'fade',
+
+					// Курсор перетаскивания
+					grabCursor: true,
+
+					// Стрелки
+					navigation: {
+						prevEl: arrowPrev,
+						nextEl: arrowNext,
+					},
+
+					// Пагинация
+					pagination: {
+						el: pagination,
+						clickable: true,
+					},
+
+					breakpoints: {
+						1439.98: {
+							slidesPerView: 2.67,
 							spaceBetween: 30,
 						},
 					},
