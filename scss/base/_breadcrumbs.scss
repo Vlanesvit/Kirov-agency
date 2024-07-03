@@ -1,0 +1,146 @@
+.rs-breadcrumbs {
+	position: relative;
+
+	// .rs-breadcrumbs__container
+	&__container {
+	}
+
+	&__block {
+		padding-bottom: 46px;
+		padding-top: 20px;
+		border-bottom: 1px solid #b7b7b7;
+
+		.no-border & {
+			border: none;
+		}
+
+		@media (max-width: 1439.98px) {
+			padding-bottom: 34px;
+		}
+
+		@media (max-width: 1169.98px) {
+			padding-bottom: 24px;
+		}
+
+		@media (max-width: 991.98px) {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+	}
+
+	&__title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 40px;
+
+		@media (max-width: 1439.98px) {
+			margin-top: 34px;
+		}
+
+		@media (max-width: 1169.98px) {
+			margin-top: 24px;
+		}
+
+		@media (max-width: 991.98px) {
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			margin-top: 12px;
+		}
+
+		& > h1 {
+			font-weight: 400;
+			font-size: 35px;
+			// line-height: 38px;
+			line-height: 120%;
+			text-transform: uppercase;
+			font-family: "Suisse Intl", sans-serif;
+
+			@media (max-width: 1439.98px) {
+				font-size: 30px;
+			}
+
+			@media (max-width: 1169.98px) {
+				font-size: 25px;
+			}
+
+			@media (max-width: 991.98px) {
+				font-size: 20px;
+			}
+		}
+
+		& > .rs-btn {
+			padding: 17px 20px;
+
+			@media (max-width: 1439.98px) {
+				padding: 14px 20px;
+			}
+
+			@media (max-width: 991.98px) {
+				margin-top: 15px;
+				width: 100%;
+			}
+		}
+	}
+
+	// .rs-breadcrumbs__navigation
+	&__navigation {
+	}
+
+	// .rs-breadcrumbs__list
+	&__list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	// .rs-breadcrumbs__item
+	&__item {
+		font-weight: 400;
+		font-size: 14px;
+		// line-height: 21px;
+		line-height: 150%;
+		transition: all 0.3s ease 0s;
+
+		@media (max-width: 1439.98px) {
+			font-size: 13px;
+		}
+
+		& > span {
+			color: #858585;
+		}
+	}
+
+	// .rs-breadcrumbs__link
+	&__link {
+		display: flex;
+		align-items: center;
+
+		& > span {
+			color: #000;
+			transition: color 0.3s ease 0s;
+
+			@media (any-hover: hover) {
+				&:hover {
+					color: #858585;
+				}
+			}
+		}
+
+		&:after {
+			content: "";
+			min-width: 12px;
+			min-height: 9px;
+			max-width: 12px;
+			max-height: 9px;
+			display: block;
+			background-image: url("../img/icons/chevron-right.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			transition: transform 0.3s ease 0s;
+			margin: 0px 8px;
+		}
+	}
+}
