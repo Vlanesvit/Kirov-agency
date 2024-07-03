@@ -41,6 +41,18 @@ function addLoadedClass() {
 }
 addLoadedClass()
 
+// Дублируем текст для анимации
+document.querySelectorAll('.rs-btn').forEach(btn => {
+	btn.classList.add('split-text')
+	btn.querySelector('span').innerHTML =
+		`<span class="split-text-wrapper">
+			<span class="split-text-body">
+				<span class="split-text-origin"> ${btn.querySelector('span').textContent} </span>
+				<span class="split-text-copy"> ${btn.querySelector('span').textContent} </span>
+			</span>
+		</span>`
+});
+
 /* ====================================
 Добавить картинкам draggable="false"
 ==================================== */

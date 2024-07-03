@@ -285,11 +285,15 @@ function headerScroll() {
 	})
 	window.addEventListener('load', function () {
 		headerClassAdd()
-		headerTag.style.height = header.clientHeight + 'px';
+		if (!header.classList.contains('_header-transparent')) {
+			headerTag.style.height = header.clientHeight + 'px';
+		}
 	})
 	window.addEventListener('resize', function () {
 		headerClassAdd()
-		headerTag.style.height = header.clientHeight + 'px';
+		if (!header.classList.contains('_header-transparent')) {
+			headerTag.style.height = header.clientHeight + 'px';
+		}
 	})
 }
 headerScroll()

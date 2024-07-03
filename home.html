@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="css/rs-header.css" />
 		<script src="js/rs-header.js" defer></script>
 		<header>
-			<div class="rs-header">
+			<div class="rs-header _header-transparent">
 				<div class="rs-header__container">
 					<div class="rs-header__wrapper">
 						<div class="rs-header__logo">
@@ -56,8 +56,12 @@
 											<a href="#">Главная</a>
 										</li>
 
-										<li class="menu-item menu__dropdown">
+										<li class="menu-item">
 											<a href="#">Услуги</a>
+										</li>
+
+										<li class="menu-item menu__dropdown">
+											<a href="#">Краеведческая деятельность</a>
 
 											<ul class="menu__dropdown_list" hidden>
 												<li class="menu-item">
@@ -142,10 +146,6 @@
 													<a href="#">Дополнительные услуги</a>
 												</li>
 											</ul>
-										</li>
-
-										<li class="menu-item">
-											<a href="#">Краеведческая деятельность</a>
 										</li>
 
 										<li class="menu-item">
@@ -257,7 +257,7 @@
 											</li>
 										</ul>
 
-										<a href="#" class="rs-btn _btn-second">Написать нам</a>
+										<a href="#" class="rs-btn _btn-second"><span>Написать нам</span></a>
 									</div>
 								</div>
 							</div>
@@ -266,7 +266,7 @@
 						<div class="rs-header__buttons">
 							<div class="rs-header__contact">
 								<button type="button"
-									class="rs-btn _btn-dark-primary rs-header__contact_btn">Контакты</button>
+									class="rs-btn _btn-dark-primary rs-header__contact_btn"><span>Контакты</span></button>
 
 								<div class="rs-header__contact_modal">
 									<div class="rs-header__contact_body">
@@ -359,12 +359,14 @@
 											</li>
 										</ul>
 
-										<a href="#" class="rs-btn _btn-second">Перейти к странице контакты</a>
+										<a href="#" class="rs-btn _btn-second">
+											<span>Перейти к странице контакты</span>
+										</a>
 									</div>
 								</div>
 							</div>
 
-							<a href="#" class="rs-btn _btn-second">Написать нам</a>
+							<a href="#" class="rs-btn _btn-second"><span>Написать нам</span></a>
 						</div>
 					</div>
 				</div>
@@ -384,18 +386,21 @@
 				</div>
 
 				<div class="rs-slider__container">
-					<div class="rs-slider__content">
-						<div class="rs-slider__body">
-							<h1>Экскурсии по Санкт-Петербургу
-								и Ленинградской области, которые надолго останутся в памяти!</h1>
-							<ul>
-								<li>Увлекательное и познавательное путешествие для детей и взрослых</li>
-								<li>Самые выгодные цены на популярные направления</li>
-								<li>Организуем экскурсионные программы под ключ</li>
-								<li>Скидки для детей и пенсионеров</li>
-							</ul>
+					<div class="rs-slider__wrapper">
+						<div class="rs-slider__content">
+							<div class="rs-slider__body">
+								<h1>Экскурсии по Санкт-Петербургу
+									<br> и Ленинградской области, которые надолго останутся в памяти!
+								</h1>
+								<ul>
+									<li>Увлекательное и познавательное путешествие для детей и взрослых</li>
+									<li>Самые выгодные цены на популярные направления</li>
+									<li>Организуем экскурсионные программы под ключ</li>
+									<li>Скидки для детей и пенсионеров</li>
+								</ul>
+							</div>
 							<div class="rs-slider__buttons">
-								<a href="#" class="rs-btn _btn-primary">Подобрать экскурсию</a>
+								<a href="#" class="rs-btn _btn-primary"><span>Подобрать экскурсию</span></a>
 							</div>
 						</div>
 
@@ -415,124 +420,127 @@
 			<section class="rs-product">
 				<div class="rs-product__container">
 					<h2>Ближайшие экскурсии по Санкт-Петербургу
-						и Ленинградской области: <span class="primary-color">успейте записаться!</span></h2>
-				</div>
+						<br> и Ленинградской области: <span class="primary-color">успейте записаться!</span>
+					</h2>
 
-				<div class="rs-product__slider swiper">
-					<div class="rs-product__swiper swiper-wrapper">
-						<div class="rs-product__slide swiper-slide">
-							<div class="rs-product__item">
-								<a href="#">
-									<div class="rs-product__bg">
-										<img src="./img/blocks/product/product_bg-1.jpg" alt="">
-									</div>
+					<div class="rs-product__slider swiper">
+						<div class="rs-product__swiper swiper-wrapper">
+							<div class="rs-product__slide swiper-slide  rs-product__slide--dark-primary">
+								<div class="rs-product__item">
+									<a href="#">
+										<div class="rs-product__bg">
+											<img src="./img/blocks/product/product_bg-1.png" alt="">
+										</div>
 
-									<div class="rs-product__block">
-										<div class="rs-product__desc">
-											<div class="rs-product__date">03.01.2024 г.</div>
-											<div class="rs-product__body">
-												<h3>Bullevie Cidre</h3>
-												<p>Новогодняя экскурсия для взрослых: дегустация вкуснейшего сидра,
-													приготовленного по французской технологии прямо из бочек</p>
-												<div class="rs-product__btn">
-													<span class="rs-btn _btn-second">Подробнее</span>
+										<div class="rs-product__block">
+											<div class="rs-product__desc">
+												<div class="rs-product__date">03.01.2024 г.</div>
+												<div class="rs-product__body">
+													<h3>Bullevie Cidre</h3>
+													<p>Новогодняя экскурсия для взрослых: дегустация вкуснейшего сидра,
+														приготовленного по французской технологии прямо из бочек</p>
+													<div class="rs-product__btn">
+														<span class="rs-btn _btn-second"><span>Подробнее</span></span>
+													</div>
 												</div>
 											</div>
+											<div class="rs-product__img">
+												<img src="./img/blocks/product/product_img-1.png" alt="">
+											</div>
 										</div>
-										<div class="rs-product__img">
-											<img src="./img/blocks/product/product_img-1.png" alt="">
-										</div>
-									</div>
-								</a>
+									</a>
+								</div>
 							</div>
-						</div>
 
-						<div class="rs-product__slide swiper-slide">
-							<div class="rs-product__item">
-								<a href="#">
-									<div class="rs-product__bg">
-										<img src="./img/blocks/product/product_bg-2.jpg" alt="">
-									</div>
+							<div class="rs-product__slide swiper-slide rs-product__slide--primary">
+								<div class="rs-product__item">
+									<a href="#">
+										<div class="rs-product__bg">
+											<img src="./img/blocks/product/product_bg-2.png" alt="">
+										</div>
 
-									<div class="rs-product__block">
-										<div class="rs-product__desc">
-											<div class="rs-product__date">04.01.2024 г.</div>
-											<div class="rs-product__body">
-												<h3>Спектакль «Наш городок»</h3>
-												<p>Молодёжный театр на Фонтанке: самая знаменитая пьеса Уайлдера, в ней
-													Уайлдер пытается проникнуть в тайный смысл сущего, разобраться в
-													причинно-следственных связях человеческого бытия</p>
-												<div class="rs-product__btn">
-													<span class="rs-btn _btn-second">Подробнее</span>
+										<div class="rs-product__block">
+											<div class="rs-product__desc">
+												<div class="rs-product__date">04.01.2024 г.</div>
+												<div class="rs-product__body">
+													<h3>Спектакль <br> «Наш городок»</h3>
+													<p>Молодёжный театр на Фонтанке: самая знаменитая пьеса Уайлдера, в
+														ней
+														Уайлдер пытается проникнуть в тайный смысл сущего, разобраться в
+														причинно-следственных связях человеческого бытия</p>
+													<div class="rs-product__btn">
+														<span class="rs-btn _btn-second"><span>Подробнее</span></span>
+													</div>
 												</div>
 											</div>
+											<div class="rs-product__img">
+												<img src="./img/blocks/product/product_img-2.png" alt="">
+											</div>
 										</div>
-										<div class="rs-product__img">
-											<img src="./img/blocks/product/product_img-2.png" alt="">
-										</div>
-									</div>
-								</a>
+									</a>
+								</div>
 							</div>
-						</div>
 
-						<div class="rs-product__slide swiper-slide">
-							<div class="rs-product__item">
-								<a href="#">
-									<div class="rs-product__bg">
-										<img src="./img/blocks/product/product_bg-3.jpg" alt="">
-									</div>
+							<div class="rs-product__slide swiper-slide rs-product__slide--white">
+								<div class="rs-product__item">
+									<a href="#">
+										<div class="rs-product__bg">
+											<img src="./img/blocks/product/product_bg-3.png" alt="">
+										</div>
 
-									<div class="rs-product__block">
-										<div class="rs-product__desc">
-											<div class="rs-product__date">05.01.2024 г.</div>
-											<div class="rs-product__body">
-												<h3>Опера «Корневильские колокола»</h3>
-												<p>Романтическая оперетта в особняке фон Дервиза на Английской
-													набережной: комическая опера в трёх действиях и четырёх картинах
-													французского композитора Робера Планкета</p>
-												<div class="rs-product__btn">
-													<span class="rs-btn _btn-second">Подробнее</span>
+										<div class="rs-product__block">
+											<div class="rs-product__desc">
+												<div class="rs-product__date">05.01.2024 г.</div>
+												<div class="rs-product__body">
+													<h3>Опера <br> «Корневильские колокола»</h3>
+													<p>Романтическая оперетта в особняке фон Дервиза на Английской
+														набережной: комическая опера в трёх действиях и четырёх картинах
+														французского композитора Робера Планкета</p>
+													<div class="rs-product__btn">
+														<span class="rs-btn _btn-second"><span>Подробнее</span></span>
+													</div>
 												</div>
 											</div>
+											<div class="rs-product__img">
+												<img src="./img/blocks/product/product_img-3.png" alt="">
+											</div>
 										</div>
-										<div class="rs-product__img">
-											<img src="./img/blocks/product/product_img-3.png" alt="">
-										</div>
-									</div>
-								</a>
+									</a>
+								</div>
 							</div>
-						</div>
 
-						<div class="rs-product__slide swiper-slide">
-							<div class="rs-product__item">
-								<a href="#">
-									<div class="rs-product__bg">
-										<img src="./img/blocks/product/product_bg-4.jpg" alt="">
-									</div>
+							<div class="rs-product__slide swiper-slide rs-product__slide--second">
+								<div class="rs-product__item">
+									<a href="#">
+										<div class="rs-product__bg">
+											<img src="./img/blocks/product/product_bg-4.png" alt="">
+										</div>
 
-									<div class="rs-product__block">
-										<div class="rs-product__desc">
-											<div class="rs-product__date">05.01.2024 г.</div>
-											<div class="rs-product__body">
-												<h3>Экскурсия «Традиции Рождества и Нового года»</h3>
-												<p>Экскурсия по Санкт-Петербургу: в ходе экскурсии, вы не просто узнаете
-													историю и традиции праздников, но и загадаете желания, которые
-													обязательно сбудутся в наступающем году</p>
-												<div class="rs-product__btn">
-													<span class="rs-btn _btn-second">Подробнее</span>
+										<div class="rs-product__block">
+											<div class="rs-product__desc">
+												<div class="rs-product__date">05.01.2024 г.</div>
+												<div class="rs-product__body">
+													<h3>Экскурсия <br> «Традиции Рождества и Нового года»</h3>
+													<p>Экскурсия по Санкт-Петербургу: в ходе экскурсии, вы не просто
+														узнаете
+														историю и традиции праздников, но и загадаете желания, которые
+														обязательно сбудутся в наступающем году</p>
+													<div class="rs-product__btn">
+														<span class="rs-btn _btn-second"><span>Подробнее</span></span>
+													</div>
 												</div>
 											</div>
+											<div class="rs-product__img">
+												<img src="./img/blocks/product/product_img-4.png" alt="">
+											</div>
 										</div>
-										<div class="rs-product__img">
-											<img src="./img/blocks/product/product_img-4.png" alt="">
-										</div>
-									</div>
-								</a>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<a href="#" class="rs-btn _btn-second">Все экскурсии</a>
+					<a href="#" class="rs-btn _btn-second"><span>Все экскурсии</span></a>
 				</div>
 			</section>
 
@@ -546,7 +554,7 @@
 						<div class="rs-services__list">
 							<div class="rs-services__title">
 								<h2>Экскурсии, поездки и другие <span class="primary-color">услуги</span></h2>
-								<a href="#" class="rs-btn _btn-primary">Все услуги</a>
+								<a href="#" class="rs-btn _btn-primary"><span>Все услуги</span></a>
 							</div>
 							<div class="rs-services__item rs-services__item--primary">
 								<a href="#">
@@ -820,7 +828,7 @@
 										более выгодным!</span></h3>
 								<p>Подпишитесь на нашу группу ВК и будьте в курсе
 									самых интересных предложений</p>
-								<a href="#" class="rs-btn _btn-second">Подписаться</a>
+								<a href="#" class="rs-btn _btn-second"><span>Подписаться</span></a>
 							</div>
 							<div class="rs-banner__img">
 								<img src="./img/blocks/banner/banner_phone.png" alt="">
@@ -840,7 +848,7 @@
 						<div class="rs-reviews__title">
 							<div class="rs-reviews__title_body">
 								<h2>Что говорят о нас <span class="primary-color">постоянные клиенты</span></h2>
-								<a href="#" class="rs-btn _btn-primary">Все услуги</a>
+								<a href="#" class="rs-btn _btn-primary"><span>Все услуги</span></a>
 							</div>
 
 							<div class="rs-reviews__navigation swiper-navigation">
@@ -946,7 +954,8 @@
 													сайта</a>
 											</div>
 											<div class="form__button">
-												<button type="submit" class="rs-btn _btn-primary">Отправить</button>
+												<button type="submit"
+													class="rs-btn _btn-primary"><span>Отправить</span></button>
 											</div>
 										</div>
 									</div>
@@ -955,7 +964,7 @@
 						</div>
 
 						<div class="rs-footer__info">
-							<div class="rs-footer__info-top">
+							<div class="rs-footer__info_top">
 								<div class="rs-footer__spollers">
 									<div class="rs-footer__spollers_item">
 										<h5 type="button" class="rs-footer__spollers_title">Контактная информация </h5>
@@ -1073,6 +1082,14 @@
 											</div>
 										</div>
 									</div>
+								</div>
+							</div>
+							<div class="rs-footer__info_bottom">
+								<div class="rs-footer__copyright">
+									© КАЭП 2024. Все права защищены.
+								</div>
+								<div class="rs-footer__dev">
+									<a href="#">Разработано в Россайт</a>
 								</div>
 							</div>
 						</div>

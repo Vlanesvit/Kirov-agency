@@ -5,30 +5,26 @@
 // Инициализация слайдеров
 function initSliders() {
 	// Перечень слайдеров
-	if (document.querySelector('.rs-slider__slider.swiper')) {
-		const sliderBlocks = document.querySelectorAll('.rs-slider');
+	if (document.querySelector('.rs-product__slider')) {
+		const sliderBlocks = document.querySelectorAll('.rs-product');
 
 		sliderBlocks.forEach(slider => {
-			const sliderSwiper = slider.querySelectorAll('.rs-slider__slider.swiper');
-			const arrowPrev = slider.querySelector('.rs-slider__button-prev');
-			const arrowNext = slider.querySelector('.rs-slider__button-next');
-			const pagination = slider.querySelector('.rs-slider__pagination');
-			const interleaveOffset = 0.75;
+			const sliderSwiper = slider.querySelectorAll('.rs-product__slider');
+			const arrowPrev = slider.querySelector('.rs-product__button-prev');
+			const arrowNext = slider.querySelector('.rs-product__button-next');
+			const pagination = slider.querySelector('.rs-product__pagination');
 
 			sliderSwiper.forEach(swiper => {
 				const swiperMain = new Swiper(swiper, {
-					// Автопрокрутка
-					autoplay: {
-						// Пауза между прокруткой
-						delay: 10000,
-						// Закончить на последнем слайде
-						stopOnLastSlide: false,
-						// Отключить после ручного переключения
-						disableOnInteraction: false,
-					},
-
-					// Кол-во показываемых слайдов
-					slidesPerView: 1,
+					// // Автопрокрутка
+					// autoplay: {
+					// 	// Пауза между прокруткой
+					// 	delay: 10000,
+					// 	// Закончить на последнем слайде
+					// 	stopOnLastSlide: false,
+					// 	// Отключить после ручного переключения
+					// 	disableOnInteraction: false,
+					// },
 
 					// Обновить свайпер
 					// при изменении элементов слайдера
@@ -44,7 +40,7 @@ function initSliders() {
 					// Включение/отключение
 					// перетаскивание на ПК
 					simulateTouch: true,
-					allowTouchMove: false,
+					allowTouchMove: true,
 					// Чувствительность свайпа
 					touchRadio: 1,
 					// Угол срабатывания свайпа/перетаскивания
@@ -54,6 +50,10 @@ function initSliders() {
 
 					// Цикличность слайдера
 					loop: true,
+
+					centerInsufficientSlides: true,
+					centeredSlidesBounds: true,
+					centeredSlides: true,
 
 					// Анимация переключения
 					// effect: 'fade',
@@ -71,36 +71,14 @@ function initSliders() {
 					pagination: {
 						el: pagination,
 						clickable: true,
-						type: 'fraction',
-						formatFractionCurrent: addZero,
-						formatFractionTotal: addZero
 					},
 
-					watchSlidesProgress: true,
-					direction: 'vertical',
-					on: {
-						progress: function () {
-							let swiper = this;
-
-							for (let i = 0; i < swiper.slides.length; i++) {
-								let slideProgress = swiper.slides[i].progress;
-								let innerOffset = swiper.height * interleaveOffset;
-								let innerTranslate = slideProgress * innerOffset;
-
-								TweenMax.set(swiper.slides[i].querySelector(".rs-slider__bg"), {
-									y: innerTranslate,
-								});
-							}
+					breakpoints: {
+						1439.98: {
+							slidesPerView: 1.5,
+							spaceBetween: 30,
 						},
-						setTransition: function (slider, speed) {
-							let swiper = this;
-							for (let i = 0; i < swiper.slides.length; i++) {
-								swiper.slides[i].style.transition = speed + "ms";
-								swiper.slides[i].querySelector(".rs-slider__bg").style.transition =
-									speed + "ms";
-							}
-						}
-					}
+					},
 				});
 			});
 		});

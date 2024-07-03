@@ -1,0 +1,32 @@
+.rs-text-block {
+	// .rs-text-block__bg
+	&__bg {
+	}
+
+	// .rs-text-block__container
+	&__container {
+	}
+
+	// .rs-text-block__wrapper
+	&__wrapper {
+	}
+
+	// .rs-text-block__desc
+	&__desc {
+	}
+
+	// .rs-text-block__img
+	&__img {
+	}
+
+	// .rs-text-block__blockquote
+	&__blockquote {
+		// .rs-text-block__blockquote_icon
+		&_icon {
+		}
+
+		// .rs-text-block__blockquote_text
+		&_text {
+		}
+	}
+}
