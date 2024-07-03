@@ -17,6 +17,10 @@
 		img {
 			object-fit: contain;
 		}
+
+		@media (max-width: 991.98px) {
+			display: none;
+		}
 	}
 
 	&__line {
@@ -45,22 +49,50 @@
 		grid-template-columns: repeat(3, 1fr);
 		gap: 30px;
 
-		& > * {
-			&:nth-child(6) {
-				grid-area: 3 / 2 / 3 / 2;
+		@media (max-width: 1429.98px) {
+			gap: 20px;
+		}
+
+		@media (max-width: 991.98px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media (max-width: 767.98px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		@media (min-width: 991.98px) {
+			& > * {
+				&:nth-child(6) {
+					grid-area: 3 / 2 / 3 / 2;
+				}
 			}
 		}
 	}
 
 	// .rs-services__title
 	&__title {
-		padding-right: 27px;
-		padding-top: 18px;
+		@media (min-width: 991.98px) {
+			padding-right: 27px;
+			padding-top: 18px;
+		}
 
 		h2 {
 			letter-spacing: 0.03em;
-			text-align: left;
-			margin-bottom: 33px;
+
+			@media (min-width: 1439.98px) {
+				margin-bottom: 33px;
+			}
+
+			@media (min-width: 767.98px) {
+				text-align: left;
+			}
+		}
+
+		.rs-btn {
+			@media (max-width: 767.98px) {
+				width: 100%;
+			}
 		}
 	}
 
@@ -72,12 +104,25 @@
 		overflow: hidden;
 		position: relative;
 
+		@media (max-width: 991.98px) {
+			border-radius: 15px;
+		}
+
 		a {
 			display: block;
 			min-height: 286px;
 			width: 100%;
 			height: 100%;
 			padding: 40px;
+
+			@media (max-width: 1439.98px) {
+				padding: 30px;
+			}
+
+			@media (max-width: 991.98px) {
+				padding: 20px;
+				min-height: unset;
+			}
 		}
 
 		@media (any-hover: hover) {
@@ -125,6 +170,17 @@
 		justify-content: center;
 		background-color: rgba($color: #fff, $alpha: 0.4);
 		border-radius: 15px;
+
+		@media (max-width: 991.98px) {
+			margin-top: 10px;
+			width: 36px;
+			height: 36px;
+
+			svg {
+				width: 15px;
+				height: 15px;
+			}
+		}
 
 		svg {
 			transition: transform 0.3s ease 0s;

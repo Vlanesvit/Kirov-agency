@@ -2,7 +2,9 @@
 	// .rs-steps__container
 	&__container {
 		h2 {
-			margin-bottom: 70px;
+			@media (min-width: 1439.98px) {
+				margin-bottom: 70px;
+			}
 		}
 	}
 
@@ -22,10 +24,24 @@
 		flex: 0 0 25%;
 		padding: 15px;
 
-		&:nth-child(-n + 1),
-		&:nth-child(5n),
-		&:nth-child(4n) {
-			transform: translateY(-166px);
+		@media (min-width: 991.98px) {
+			&:nth-child(-n + 1),
+			&:nth-child(5n),
+			&:nth-child(4n) {
+				transform: translateY(-166px);
+
+				@media (max-width: 1439.98px) {
+					transform: translateY(-100px);
+				}
+			}
+		}
+
+		@media (max-width: 991.98px) {
+			flex: 0 0 50%;
+		}
+
+		@media (max-width: 767.98px) {
+			flex: 0 0 100%;
 		}
 	}
 

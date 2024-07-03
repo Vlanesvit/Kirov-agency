@@ -72,7 +72,44 @@ function initSliders() {
 						clickable: true,
 					},
 
+					slidesPerView: 2.67,
+					spaceBetween: 30,
+
 					breakpoints: {
+						0: {
+							slidesPerView: 1,
+							spaceBetween: 16,
+						},
+						767.98: {
+							slidesPerView: 1.5,
+							spaceBetween: 16,
+						},
+						991.98: {
+							slidesPerView: 2,
+							spaceBetween: 24,
+						},
+						1439.98: {
+							slidesPerView: 2.67,
+							spaceBetween: 30,
+						},
+					},
+
+					breakpoints: {
+						0: {
+							slidesPerView: 1,
+							spaceBetween: 16,
+						},
+						539.98: {
+							slidesPerView: 1.5,
+							spaceBetween: 16,
+						},
+						767.98: {
+							slidesPerView: 2,
+							spaceBetween: 16,
+						},
+						991.98: {
+							spaceBetween: 24,
+						},
 						1439.98: {
 							slidesPerView: 1.5,
 							spaceBetween: 30,
@@ -147,6 +184,18 @@ function initSliders() {
 					},
 
 					breakpoints: {
+						0: {
+							slidesPerView: 1,
+							spaceBetween: 16,
+						},
+						767.98: {
+							slidesPerView: 1.5,
+							spaceBetween: 16,
+						},
+						991.98: {
+							slidesPerView: 2,
+							spaceBetween: 24,
+						},
 						1439.98: {
 							slidesPerView: 2.67,
 							spaceBetween: 30,

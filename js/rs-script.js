@@ -83,6 +83,7 @@ function startHoverVideo() {
 		const video = container.querySelector('video');
 
 		container.addEventListener('mouseenter', function () {
+			container.classList.add('_play-video');
 			if (userInteracted) {
 				pauseAllVideos();
 				video.play().catch(error => {
@@ -92,6 +93,7 @@ function startHoverVideo() {
 		});
 
 		container.addEventListener('mouseleave', function () {
+			container.classList.remove('_play-video');
 			video.pause();
 			// video.currentTime = 0; // Возвращаем видео в начало
 			// video.load(); // Перезагрузить видео, чтобы отобразить постер

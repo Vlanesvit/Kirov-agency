@@ -85,7 +85,7 @@ body {
 	padding-right: $paddingContainer;
 
 	@media (max-width: 991.98px) {
-		max-width: 768px;
+		max-width: calc(767.98px + ($paddingContainer * 2));
 	}
 
 	@media (max-width: 767.98px) {

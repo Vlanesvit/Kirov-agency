@@ -16,6 +16,11 @@
 .rs-product__container > .rs-btn {
   margin-top: 40px;
 }
+@media (max-width: 991.98px) {
+  .rs-product__container > .rs-btn {
+    margin-top: 20px;
+  }
+}
 .rs-product__slider {
   width: 100%;
   overflow: visible;
@@ -25,6 +30,11 @@
   height: auto;
   border-radius: 30px;
   overflow: hidden;
+}
+@media (max-width: 991.98px) {
+  .rs-product__slide {
+    border-radius: 15px;
+  }
 }
 .rs-product__slide._dark-primary-bg .rs-btn {
   background-color: var(--second-color);
@@ -72,6 +82,16 @@
   height: 100%;
   padding: 50px 70px 70px;
 }
+@media (max-width: 1439.98px) {
+  .rs-product__item a {
+    padding: 30px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-product__item a {
+    padding: 20px;
+  }
+}
 .rs-product__bg {
   position: absolute;
   top: 0;
@@ -95,6 +115,20 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 991.98px) {
+  .rs-product__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 .rs-product__desc {
   color: #fff;
   width: 100%;
@@ -113,6 +147,17 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 991.98px) {
+  .rs-product__desc {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 100%;
+  }
+}
 .rs-product__date {
   font-weight: 700;
   font-size: 14px;
@@ -121,6 +166,13 @@
   padding: 5px 20px;
   border-radius: 34px;
   background: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 991.98px) {
+  .rs-product__date {
+    font-size: 12px;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+  }
 }
 .rs-product__body h3 {
   text-transform: uppercase;
@@ -138,6 +190,14 @@
   max-width: 500px;
   margin-left: 30px;
   padding: 16px 0px;
+}
+@media (max-width: 991.98px) {
+  .rs-product__img {
+    padding: 0;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-top: 15px;
+  }
 }
 .rs-product__img img {
   width: 100%;

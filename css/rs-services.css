@@ -8,6 +8,11 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media (max-width: 991.98px) {
+  .rs-services__bg {
+    display: none;
+  }
+}
 .rs-services__line {
   position: absolute;
   top: 0;
@@ -31,17 +36,49 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-.rs-services__list > *:nth-child(6) {
-  grid-area: 3/2/3/2;
+@media (max-width: 1429.98px) {
+  .rs-services__list {
+    gap: 20px;
+  }
 }
-.rs-services__title {
-  padding-right: 27px;
-  padding-top: 18px;
+@media (max-width: 991.98px) {
+  .rs-services__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-services__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 991.98px) {
+  .rs-services__list > *:nth-child(6) {
+    grid-area: 3/2/3/2;
+  }
+}
+@media (min-width: 991.98px) {
+  .rs-services__title {
+    padding-right: 27px;
+    padding-top: 18px;
+  }
 }
 .rs-services__title h2 {
   letter-spacing: 0.03em;
-  text-align: left;
-  margin-bottom: 33px;
+}
+@media (min-width: 1439.98px) {
+  .rs-services__title h2 {
+    margin-bottom: 33px;
+  }
+}
+@media (min-width: 767.98px) {
+  .rs-services__title h2 {
+    text-align: left;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-services__title .rs-btn {
+    width: 100%;
+  }
 }
 .rs-services__item {
   width: 100%;
@@ -50,12 +87,28 @@
   overflow: hidden;
   position: relative;
 }
+@media (max-width: 991.98px) {
+  .rs-services__item {
+    border-radius: 15px;
+  }
+}
 .rs-services__item a {
   display: block;
   min-height: 286px;
   width: 100%;
   height: 100%;
   padding: 40px;
+}
+@media (max-width: 1439.98px) {
+  .rs-services__item a {
+    padding: 30px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-services__item a {
+    padding: 20px;
+    min-height: unset;
+  }
 }
 @media (any-hover: hover) {
   .rs-services__item:hover .rs-services__arrow svg {
@@ -103,6 +156,17 @@
           justify-content: center;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 15px;
+}
+@media (max-width: 991.98px) {
+  .rs-services__arrow {
+    margin-top: 10px;
+    width: 36px;
+    height: 36px;
+  }
+  .rs-services__arrow svg {
+    width: 15px;
+    height: 15px;
+  }
 }
 .rs-services__arrow svg {
   -webkit-transition: -webkit-transform 0.3s ease 0s;

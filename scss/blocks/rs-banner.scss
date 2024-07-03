@@ -10,6 +10,11 @@
 		border-radius: 30px;
 		width: calc(100% - 20px);
 		margin: 0 auto;
+
+		@media (max-width: 991.98px) {
+			width: 100%;
+			border-radius: 15px;
+		}
 	}
 
 	// .rs-banner__bg
@@ -32,7 +37,11 @@
 	&__content {
 		text-align: center;
 		color: #fff;
-		padding: 70px 0px;
+		padding: 70px 20px;
+
+		@media (max-width: 991.98px) {
+			padding: 40px 20px;
+		}
 	}
 
 	// .rs-banner__body
@@ -56,6 +65,10 @@
 
 	&__btn {
 		margin-top: 20px;
+
+		@media (max-width: 991.98px) {
+			margin-top: 15px;
+		}
 	}
 
 	// .rs-banner__img
@@ -63,5 +76,10 @@
 		box-shadow: 0 66px 88px 0 rgba(0, 4, 24, 0.5);
 		margin-top: 70px;
 		margin-bottom: -71px;
+		padding: 0px 20px;
+
+		@media (max-width: 991.98px) {
+			margin-top: 30px;
+		}
 	}
 }
