@@ -72,11 +72,11 @@ function startHoverVideo() {
 
 		// Обработчик для воспроизведения/остановки видео при клике
 		container.addEventListener('click', function () {
+			container.classList.toggle('_play-video');
+
 			if (video.paused) {
 				pauseAllVideos();
-				video.play().catch(error => {
-					console.error('Error trying to play the video:', error);
-				});
+				video.play();
 			} else {
 				video.pause();
 				// video.currentTime = 0;
@@ -86,6 +86,8 @@ function startHoverVideo() {
 
 		// Обработчик для воспроизведения видео при наведении курсора
 		container.addEventListener('mouseenter', function () {
+			container.classList.add('_play-video');
+
 			pauseAllVideos();
 			video.play().catch(error => {
 				console.error('Error trying to play the video:', error);
@@ -94,6 +96,8 @@ function startHoverVideo() {
 
 		// Обработчик для остановки видео при отведении курсора
 		container.addEventListener('mouseleave', function () {
+			container.classList.remove('_play-video');
+
 			video.pause();
 			// video.currentTime = 0;
 			// video.load(); // Перезагрузить видео, чтобы отобразить постер
