@@ -70,6 +70,10 @@
 				._header-transparent:not(._header-scroll) & {
 					filter: invert(1);
 				}
+
+				.menu-open ._header-transparent & {
+					filter: invert(0);
+				}
 			}
 		}
 	}
