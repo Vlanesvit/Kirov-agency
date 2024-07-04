@@ -61,6 +61,11 @@ function startHoverVideo() {
 	function pauseAllVideos() {
 		videoContainers.forEach(container => {
 			const video = container.querySelector('video');
+
+			if (container.classList.contains('_play-video')) {
+				container.classList.remove('_play-video');
+			}
+			
 			video.pause();
 			// video.currentTime = 0;
 			// video.load(); // Перезагрузить видео, чтобы отобразить постер
