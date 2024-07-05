@@ -259,8 +259,7 @@
 
 					& > a {
 						@media (min-width: 991.98px) {
-							font-weight: 700 !important;
-							// font-weight: 600 !important;
+							font-weight: 600 !important;
 							height: 100%;
 
 							._header-transparent:not(._header-scroll) & {
@@ -468,8 +467,7 @@
 			margin-top: 20px;
 
 			li {
-				font-weight: 700;
-				// font-weight: 600;
+				font-weight: 600;
 				font-size: 15px;
 				// line-height: 19px;
 				line-height: 130%;

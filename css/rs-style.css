@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Bellota+Text:regular,700&display=swap);
 :root {
   --primary-color: #007bfb;
   --primary-dark-color: #05396b;
@@ -59,7 +58,7 @@ body {
 body {
   color: var(--font-color);
   line-height: 1;
-  font-family: "Bellota Text", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   background: var(--bg-color);
   -ms-text-size-adjust: 100%;
@@ -81,7 +80,7 @@ input,
 button,
 textarea {
   outline: none;
-  font-family: "Bellota Text", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: inherit;
 }
 
@@ -342,7 +341,7 @@ h5 {
 }
 
 h6 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 15px;
   line-height: 130%;
 }
@@ -460,7 +459,7 @@ p {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   z-index: 10;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   line-height: normal;
   letter-spacing: 0.03em;
